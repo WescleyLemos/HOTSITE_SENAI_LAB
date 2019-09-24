@@ -146,8 +146,8 @@
             padding-top: 100px;
             grid-row-start: 2;
             grid-row-end: 3;
-            
-            
+
+
         }
 
 
@@ -257,6 +257,7 @@
             padding-top: 15px
         }
 
+
         /* ---------------final PROJETOS------------- */
 
 
@@ -359,11 +360,10 @@
 
 
         /* ---------------RODAPÉ------------- */
-        .rodape
-        {
+        .rodape {
             grid-row-start: 4;
             grid-row-end: 5;
-            background-color: rgb(38, 38, 38) ;
+            background-color: rgb(38, 38, 38);
             color: white;
             height: 250px;
             display: flex;
@@ -373,32 +373,51 @@
             font-size: 20px;
         }
 
-        .div-social
-        {
+        .div-social {
             display: flex;
         }
 
-        .img-social
-        {
+        .img-social {
             width: 60px;
-            height: 6   0px;
+            height: 6 0px;
             margin: 0 10px;
         }
 
-        .div-links
-        {
+        .div-links {
             display: flex;
-            
+
         }
 
-        .div-links a{
+        .div-links a {
             text-decoration: none;
             margin: 0 10px;
-            color:white;
-            font-weight: 700;   
+            color: white;
+            font-weight: 700;
         }
 
         /* ---------------final RODAPÉ------------- */
+
+
+
+        /* ******************ANIMAÇÃO****************** */
+
+        [data-anime] {
+            opacity: 0;
+            transition: .5s;
+        }
+
+        [data-anime="esquerda"] {
+            transform: translate3d(-50px, 0, 0);
+        }
+
+        [data-anime="direita"] {
+            transform: translate3d(50px, 0, 0);
+        }
+
+        [data-anime].animate {
+            opacity: 1;
+            transform: translate3d(0px, 0px, 0px);
+        }
     </style>
 
 </head>
@@ -433,12 +452,12 @@
         <h3 class="subtitulo-projetos">Veja abaixo os principais projetos desenvolvidos pelo Senai Lab</h3>
 
         <div class="selecionar-projetos">
-            <div class="box-projetos ">
+            <div class="box-projetos " data-anime="esquerda">
                 <h2>MÁQUINA DE CORTE<br> A LASER</h2>
                 <img src="./img/maquina-laser.jpg" alt="maquina-a-laser" class="box-laser">
             </div>
 
-            <div class="box-projetos ">
+            <div class="box-projetos" data-anime="direita">
                 <h2>IMPRESSORA 3D</h2>
                 <img src="./img/Impressora3D.JPG" alt="impressora-3d" class="box-impressora">
             </div>
@@ -517,6 +536,30 @@
                 behavior: 'smooth' // 3
             });
         }
+
+        const target = document.querySelectorAll('[data-anime]');
+        const animationClass = 'animate';
+
+        // https://www.youtube.com/watch?v=pKTOT63X9XQ
+        function animeScroll() {
+            const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
+            target.forEach(function (element) {
+                if ((windowTop) > element.offsetTop) {
+                    element.classList.add(animationClass);
+                } else {
+                    element.classList.remove(animationClass);
+                }
+
+            })
+        }
+
+        animeScroll();
+
+        if(target.length){
+        window.addEventListener('scroll', function () {
+            animeScroll();
+        })
+    }
     </script>
     <!-- ***************************************FINAL SCRIPT*************************************** -->
 
