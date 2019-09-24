@@ -30,7 +30,8 @@
             display: grid;
             min-height: 100vh;
             grid-template-columns: 100%;
-            grid-template-rows: 100vh auto auto auto;
+            grid-template-rows: 100vh auto 1000px auto;
+
         }
 
         h1 {
@@ -45,6 +46,10 @@
             -webkit-text-fill-color: transparent;
             background: -webkit-linear-gradient(left, #f8a335 0%, #f2175f 100%);
             background-image: -webkit-linear-gradient(left, rgb(248, 163, 53) 0%, rgb(242, 23, 95) 100%);
+            min-width: auto;
+
+
+
         }
 
         /* ****************************final TAGS********************************* */
@@ -54,15 +59,23 @@
 
         /* ---------------HEADER-MENU------------- */
         .cabecalho {
-
             background-image: url("img/banner.png");
-            min-height: 100%;
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             grid-row-start: 1;
             grid-row-end: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-home {
+            width: 100%;
+            position: absolute;
+            background-size: contain;
         }
 
         .navbar {
@@ -120,19 +133,24 @@
 
         /* ---------------PROJETOS------------- */
         .projetos {
+            grid-row-start: 2;
+            grid-row-end: 3;
             background-image: url("./img/bolinhas.png");
             background-position: center;
             background-repeat: no-repeat;
             display: flex;
             flex-direction: column;
             align-items: center;
-            border: solid 1px;
             width: 100%;
             height: 800px;
             padding-top: 100px;
             grid-row-start: 2;
             grid-row-end: 3;
+            
+            
         }
+
+
 
         .subtitulo-projetos {
             width: 100%;
@@ -173,10 +191,17 @@
             color: white;
         }
 
-
-
         .box-projetos h2 {
             z-index: 2;
+            text-align: center;
+
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            pointer-events: none;
         }
 
         .box-laser {
@@ -207,29 +232,19 @@
             width: 100%;
             height: 50px;
             box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.14);
-
-
-
         }
 
-
         .noticias-div {
-            margin-top: 95px;
+            width: 100%;
+            margin-top: 110px;
             display: flex;
-            z-index: 0;
-            /* width: 400px;
-            height: 400px; */
             justify-content: center;
             align-items: center;
-            /* margin: 0px 30px 0px 30px; */
-            /* border-radius: 30px; */
-            /* background: linear-gradient(45deg, rgba(248, 163, 53, 1) 0%, rgba(242, 23, 95, 0.9) 100%);
-            margin-top: 40px; */
+
         }
 
         .noticias-div img,
         .noticias-div h1 {
-
             position: absolute;
             font-size: 30px;
             font-family: sans-serif;
@@ -238,12 +253,152 @@
             z-index: 1;
         }
 
-
         .noticias-div h1 {
             padding-top: 15px
         }
 
         /* ---------------final PROJETOS------------- */
+
+
+
+        /* ---------------NOTÍCIAS------------- */
+        .noticias {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            margin-top: 30px;
+            display: grid;
+            min-height: 100vh;
+            grid-template-columns: repeat(3, 33, 3%);
+            grid-template-rows: 80px 310px 310px 1fr;
+            grid-column-gap: 40px;
+            grid-row-gap: 30px;
+            padding: 0px 300px;
+        }
+
+        .botoes-div {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .botoes {
+            width: 120px;
+            height: 40px;
+            border-radius: 30px;
+            margin: 0 40px;
+            font-size: 15px;
+            font-weight: bold;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.14), -2px -2px 6px rgba(0, 0, 0, 0.14);
+            color: rgb(47, 72, 88);
+            background-color: white;
+            border-width: 0;
+        }
+
+        .noticia-principal {
+            border: solid 1px;
+            background-color: blue;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        .noticia-box {
+            border: solid 1px;
+        }
+
+        .noticia2 {
+            background-color: #f2175f;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        .noticia3 {
+            background-color: gray;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+
+        .noticia4 {
+            background-color: lime;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+
+        .noticia5 {
+            background-color: orange;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+
+        .link {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 4;
+            grid-row-end: 5;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        /* ---------------final NOTÍCIAS------------- */
+
+
+
+        /* ---------------RODAPÉ------------- */
+        .rodape
+        {
+            grid-row-start: 4;
+            grid-row-end: 5;
+            background-color: rgb(38, 38, 38) ;
+            color: white;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            font-size: 20px;
+        }
+
+        .div-social
+        {
+            display: flex;
+        }
+
+        .img-social
+        {
+            width: 60px;
+            height: 6   0px;
+            margin: 0 10px;
+        }
+
+        .div-links
+        {
+            display: flex;
+            
+        }
+
+        .div-links a{
+            text-decoration: none;
+            margin: 0 10px;
+            color:white;
+            font-weight: 700;   
+        }
+
+        /* ---------------final RODAPÉ------------- */
     </style>
 
 </head>
@@ -252,6 +407,7 @@
 <body>
     <!-- ------------------------------MENU------------------------------ -->
     <header class="cabecalho">
+        <img src="./img/logo-home.png" alt="logo-home" class="logo-home">
         <div class="navbar" id="nav">
             <ul>
                 <li class="li">Home</li>
@@ -273,7 +429,7 @@
     <!-- ------------------------------PROJETOS-------------------------- -->
     <div class="projetos" id="baixo">
 
-        <h1 class="h1-gradient-1">PROJETOS</h1>
+        <h1 class="h1-gradient-1" unselectable="on">PROJETOS</h1>
         <h3 class="subtitulo-projetos">Veja abaixo os principais projetos desenvolvidos pelo Senai Lab</h3>
 
         <div class="selecionar-projetos">
@@ -294,10 +450,50 @@
     </div>
     <!-- ---------------------------------------------------------------- -->
 
+    <!-- ------------------------------NOTÍCIAS-------------------------- -->
+    <div class="noticias">
+        <div class="botoes-div">
+            <button class="botoes bt-impressora">Impressora 3d</button>
+            <button class="botoes bt-laser">corte a lazer</button>
+        </div>
+        <div class="noticia-principal">noticia1- principal</div>
+        <div class="noticia-box noticia2">noticia2</div>
+        <div class="noticia-box noticia3">noticia3</div>
+        <div class="noticia-box noticia4">noticia4</div>
+        <div class="noticia-box noticia5">noticia5</div>
+        <div class="link"><a href="#">Mais Notícias >></a></div>
+
+    </div>
+    <!-- ---------------------------------------------------------------- -->
 
 
+    <!-- ------------------------------RODAPÉ-------------------------- -->
+    <footer class="rodape">
+        <div class="div-social">
+            <img src="./img/facebook.png" alt="facebook" class="img-social">
+            <img src="./img/twiter.png" alt="twiter" class="img-social">
+            <img src="./img/instagran.png" alt="instagran" class="img-social">
+            <img src="./img/youtube.png" alt="youtube" class="img-social">
+        </div>
+
+        <div class="div-links">
+            <a href="#">Cursos</a>
+            <a href="#">Contato</a>
+        </div>
+
+        <div>
+            <p>Rua tal , setor tal e tal CEP 777777777</p>
+        </div>
+
+        <div>
+            <p>Copyright 2018 © SENAI ● Todos os direitos reservados</p>
+        </div>
+
+    </footer>
+    <!-- ---------------------------------------------------------------- -->
 
 
+    <!-- ***************************************SCRIPT*************************************** -->
     <script>
         var nav = document.getElementById('nav');
         var selecionar = document.querySelectorAll('.li')
@@ -322,6 +518,7 @@
             });
         }
     </script>
+    <!-- ***************************************FINAL SCRIPT*************************************** -->
 
 
 </body>
