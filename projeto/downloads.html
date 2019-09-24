@@ -4,9 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Downloads</title>
 </head>
+	<style>
+    	html,body{
+    		margin: 0;
+    		padding: 0;
+    		box-sizing: border-box;
+			/*overflow-y:hidden;*/
+			/*overflow-x:hidden;*/
+    	}
+    	
+    	#container{	
+    		display: grid;
+    		grid-template-rows: 10vh 60vh 40vh 40vh  20vh;
+    		grid-template-areas: "nav nav" "header header"  "content aside" "conteudo foto" "footer footer"
+
+    	}
+
+
+    	.mainHeader{
+    		grid-area: header; 
+    		box-sizing: border-box;
+    	}
+
+    	.mainNav{
+    		grid-area: nav; 
+    		box-sizing: border-box;
+    	}
+    	
+    	.mainArticle{
+    		grid-area: content; 
+    		box-sizing: border-box;
+    	}
+    	
+    	.mainAside{
+    		grid-area: aside; 
+    		/*background-color: yellow;*/
+    		box-sizing: 
+    	}
+
+    	.mainArti{
+    		grid-area: conteudo; 
+    		/*background-color: purple;*/
+    	}
+    	
+    	.mainAsi{
+    		grid-area: foto; 
+    		box-sizing: border-box;
+    	}
+    	
+    	.mainFooter{
+    		grid-area: footer; 
+    		box-sizing: border-box;s
+    	}
+
+    	.lab{
+    		float: right;
+    		padding: 10px;
+    	}
+    	.downloads{
+    		margin: 0;
+    	}
+
+	  	a{
+	  		text-decoration: none;
+	  	}
+
+	  	ul{
+	  		 list-style-type: none;
+	  	}
+
+	  	h3{
+	  		padding: 5px;
+	  	}
+    </style>
 <body>
-    
+    <div id="container">
+			 		<nav class="mainNav">Nav</nav>
+
+					<header class="mainHeader">
+						header
+						<img src="img/downloads.png" width="100%" class="downloads">
+					</header>
+					
+				<!-- ---------------- Artigo 1--------------------------------->
+					<article class="mainArticle">
+						<h3>IMPRESSORA 3D </h3>
+						 <ul>
+		    				<li> <a href="">Projeto1</a> </li>
+		    				<li> <a href="">Projeto2</a> </li>
+		    				<li> <a href="">Projeto3</a> </li>
+		    				<li> <a href="">Projeto4</a> </li>
+	    			     </ul>
+					</article>
+
+					<aside class="mainAside">
+						<img src="img/Impressora3D.jpg" width="400" height="200" class="lab">	
+					</aside>
+
+               <!-- ---------------- Artigo 2--------------------------------->
+					<article class="mainArti">
+						<h3>CORTE A LASER</h3>
+						 <ul>
+		    				<li> <a href="">Projeto1</a> </li>
+		    				<li> <a href="">Projeto2</a> </li>
+		    				<li> <a href="">Projeto3</a> </li>
+		    				<li> <a href="">Projeto4</a> </li>
+	    			     </ul>
+					</article>
+
+					<aside class="mainAsi">
+						 <img src="img/maquina-laser.jpg" width="400" height="200" class="lab">	
+					</aside>
+
+
+
+					<footer class="mainFooter">Footer</footer>
+
+		    </div>
 </body>
 </html>
