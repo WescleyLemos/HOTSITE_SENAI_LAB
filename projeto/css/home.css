@@ -1,4 +1,5 @@
 /* ****************************TAGS********************************* */
+
 * {
     padding: 0;
     margin: 0;
@@ -6,10 +7,7 @@
     font-family: 'Raleway', sans-serif;
 }
 
-
-body,
-html {
-
+body, html {
     height: 100%;
 }
 
@@ -18,7 +16,6 @@ body {
     min-height: 100vh;
     grid-template-columns: 100%;
     grid-template-rows: 100vh auto 1000px auto;
-
 }
 
 h1 {
@@ -30,17 +27,20 @@ h1 {
 
 /* ****************************final TAGS********************************* */
 
-
 /* ****************************CLASSES********************************* */
+
 .h1-gradient-1 {
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent;
     background: -webkit-linear-gradient(left, #f8a335 0%, #f2175f 100%);
     background-image: -webkit-linear-gradient(left, rgb(248, 163, 53) 0%, rgb(242, 23, 95) 100%);
     text-align: center;
+    width: fit-content;
+    justify-self: center;
 }
 
 /* ---------------HEADER-MENU------------- */
+
 .cabecalho {
     background-image: url("../img/banner.png");
     background-attachment: fixed;
@@ -61,8 +61,6 @@ h1 {
     background-size: contain;
 }
 
-
-
 .scroll-down {
     display: flex;
     margin-top: 90vh;
@@ -81,8 +79,8 @@ h1 {
 
 /* ---------------final HEADER-MENU------------- */
 
-
 /* ---------------PROJETOS------------- */
+
 .projetos {
     grid-row-start: 2;
     grid-row-end: 3;
@@ -97,8 +95,6 @@ h1 {
     padding-top: 100px;
     grid-row-start: 2;
     grid-row-end: 3;
-
-
 }
 
 .subtitulo-projetos {
@@ -131,8 +127,7 @@ h1 {
     margin-top: 40px;
 }
 
-.box-projetos h2,
-.box-projetos img {
+.box-projetos h2, .box-projetos img {
     position: absolute;
     font-size: 30px;
     font-family: sans-serif;
@@ -188,11 +183,9 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-.noticias-div img,
-.noticias-div h1 {
+.noticias-div img, .noticias-div h1 {
     position: absolute;
     font-size: 30px;
     font-family: sans-serif;
@@ -207,8 +200,8 @@ h1 {
 
 /* ---------------final PROJETOS------------- */
 
-
 /* ---------------NOTÍCIAS------------- */
+
 .noticias {
     grid-row-start: 3;
     grid-row-end: 4;
@@ -220,7 +213,6 @@ h1 {
     grid-column-gap: 40px;
     grid-row-gap: 30px;
     margin: auto 300px auto 300px;
-
 }
 
 .botoes-div {
@@ -265,12 +257,10 @@ h1 {
     box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.14), -8px -8px 20px rgba(0, 0, 0, 0.14);
 }
 
-.titulo-principal,
-.tag {
+.titulo-principal, .tag {
     color: white;
     font-size: 20px;
     pointer-events: none;
-
 }
 
 .titulo-principal {
@@ -286,9 +276,7 @@ h1 {
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.14), -5px -5px 30px rgba(0, 0, 0, 0.14);
 }
 
-.noticia-principal:hover,
-.noticia-box:hover,
-.botoes:hover {
+.noticia-principal:hover, .noticia-box:hover, .botoes:hover {
     opacity: .8;
     transition: .2s;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.14), -2px -2px 2px rgba(0, 0, 0, 0.14);
@@ -310,7 +298,6 @@ h1 {
     margin: 10px 20px;
     display: flex;
     flex-direction: column;
-
 }
 
 .linha {
@@ -369,16 +356,17 @@ h1 {
 
 /* ---------------final NOTÍCIAS------------- */
 
-
 /* ---------------RODAPÉ------------- */
+
 .rodape {
     grid-row-start: 4;
     grid-row-end: 5;
 }
+
 /* ---------------final RODAPÉ------------- */
 
-
 /* ******************ANIMAÇÃO****************** */
+
 [data-anime] {
     opacity: 0;
     transition: .5s;
