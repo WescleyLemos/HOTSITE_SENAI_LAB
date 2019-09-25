@@ -38,8 +38,8 @@
 
 /* ---------------RODAPÉ------------- */
 .rodape {
-    grid-row-start: 4;
-    grid-row-end: 5;
+    /* grid-row-start: 4;
+    grid-row-end: 5; */
     background-color: rgb(38, 38, 38);
     color: white;
     height: 200px;
