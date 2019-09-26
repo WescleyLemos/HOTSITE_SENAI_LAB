@@ -1,4 +1,4 @@
-html,body{
+        *{
     		margin: 0;
     		padding: 0;
     		box-sizing: border-box;
@@ -8,7 +8,7 @@ html,body{
     	
     	#container{	
     		display: grid;
-    		grid-template-rows:      90vh             50vh            50vh             30vh;
+    		grid-template-rows:      90vh             50vh            50vh             20vh;
     		grid-template-areas: "header header"  "content aside" "conteudo foto" "footer footer"
 
     	}
@@ -16,7 +16,7 @@ html,body{
 
     	.cabecalho{
     		grid-area: header; 
-    		box-sizing: border-box;
+    		/*box-sizing: border-box;*/
     	}
 
     	/*.mainNav{*/
@@ -26,13 +26,13 @@ html,body{
     	
     	.mainArticle{
     		grid-area: content; 
-    		box-sizing: border-box;
+    		/*box-sizing: border-box;*/
     	}
     	
     	.mainAside{
     		grid-area: aside; 
     		/*background-color: yellow;*/
-    		box-sizing: 
+    		/*box-sizing: */
     	}
 
     	.mainArti{
@@ -42,17 +42,19 @@ html,body{
     	
     	.mainAsi{
     		grid-area: foto; 
-    		box-sizing: border-box;
+    		/*box-sizing: border-box;*/
     	}
     	
     	.rodape{
     		grid-area: footer; 
-    		box-sizing: border-box;s
+    		/*box-sizing: border-box;s*/
     	}
 
     	.lab{
     		float: right;
     		padding: 10px;
+
+            margin: 0px 90px;
     	}
     	.downloads{
     		margin: 0;
@@ -60,6 +62,7 @@ html,body{
 
 	  	a{
 	  		text-decoration: none;
+            margin: 90px;
 	  	}
 
 	  	ul{

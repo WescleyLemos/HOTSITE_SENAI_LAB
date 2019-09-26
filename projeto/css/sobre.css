@@ -5,8 +5,8 @@
     	}
 		 #container{
 		   display: grid;
-		   grid-template-rows:         70vh        70vh        60vh              50vh              60vh           20vh;
-		    grid-template-areas:"header header" "nav nav" "content aside"  "article article" "equipe equipe" "footer footer";
+		   grid-template-rows:         60vh                 70vh           60vh                        140vh                    20vh                 50vh                  20vh;
+		    grid-template-areas:"header header header" "nav nav nav" "content aside aside"  "article article article" "equipe equipe equipe"  "foto1 foto2 foto3" "footer footer footer";
 		}
 
 		.cabecalho{
@@ -34,12 +34,45 @@
 
 		.equipe{
 			grid-area: equipe;
-			background-color: purple;
+			/*background-color: purple;*/
+		}
+
+		/*
+		.div{
+			grid-area: foto;
+			background-color: yellow;
+		}*/
+
+
+		.div1{
+			grid-area: foto1;
+			/*background-color: #00FF00;*/
+			/*width: 80px;*/
+			/*display: inline-block;*/
+			/*align-content:center;*/
+			display: inline-block;
+		}
+
+		.div2{
+			grid-area: foto2;
+			/*background-color: #D2691E;*/
+			/*width: 80px;*/
+			/*display: inline-block;*/
+			/*align-content: center;*/
+		}
+
+		.div3{
+			grid-area: foto3;
+			/*background-color: #DEB887;*/
+			/*width: 80px;*/
+			/*display: inline-block;*/
+			/*align-content: center;*/
 		}
 
 		.rodape{
 		   grid-area:footer;
-		   background:orange;
+		   /*background:orange;*/
+		   /*height: 100%;*/
 		}
 
 		.pesquisa{
@@ -56,29 +89,40 @@
 			text-align: center;
 		}
 
-		.div1{
-			background-color: #00FF00;
-			width: 80px;
-			display: inline-block;
-			text-align: center;
-		}
 
-		.div2{
-			background-color: #D2691E;
-			width: 80px;
-			display: inline-block;
-			text-align: center;
-		}
-
-		.div3{
-			background-color: #DEB887;
-			width: 80px;
-			display: inline-block;
-			text-align: center;
-		}
-
-		.lab-foto{
+		.senai-lab{
 			text-align: center;
 			padding: 30px;
-			font-size: 30px;
+			font-size: 30px; 
 		}
+
+		.maquina-foto{
+			border: #ffcc66 Solid 10px;
+		}
+
+		.usuario{
+			text-align: center;
+		}
+
+		/*@media only screen and (max-device-width: 900px) {*/
+		 /*.container{ width:600px; } */
+		/*}*/
+
+		/*@media only screen and (max-device-width: 700px) {*/
+		/*.container { width:400px; } */
+		/*}*/
+
+
+        @media(max-width: 600px){
+           .container{display: grid;
+           	grid-area: "header" "nav" "content" "footer"
+           }
+        }
+
+        @media(max-width: 1000px),(orientation: portrait){
+            .container{display: block;}
+        }
+
+        @media(min-width: 700px) and (max-width: 1000px) {
+            .container{display: block;}
+        }
