@@ -4,120 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/contato.css">
+    <link rel="stylesheet" type="text/css" href="css/menu-rodape.css">
     <title>Contato</title>
 
-    <style>
-
-    	*{
-    		margin: 0;
-    		padding: 0;
-    	}
-
- 		#container{
-   		display: grid;
-   		grid-template-rows:   70vh            20vh      40vh             60vh               30vh         20vh      20vh;
-    	grid-template-areas:"header header" "h1 h1" "content content" "conteudo conteudo" "input buton" "div div" "footer footer";
-		}
-
-		.mainHeader{
-		   grid-area:header;
-		   /*background:red;*/
-		}
-
-		.mainH1{
-		   grid-area:h1;
-		   /*background:green;*/
-		   text-align: center;
-		   font-family: Verdana, sans-serif;
-		}
-		.mainArticle{
-		   grid-area:content;
-		   /*background:blue;*/
-		   text-align: center;
-		   font-family: Verdana, sans-serif;
-		}
-		.mainAside{
-		   grid-area:aside;
-		   /*background:yellow;*/
-		   text-align: center;
-		   font-family: Verdana, sans-serif;
-		}
-		
-
-		.mainConteudo{
-			grid-area: conteudo;
-			/*background: #00FFFF;*/
-			text-align: center;
-			font-family: Verdana, sans-serif;
-		}
-
-		.mainInput{
-			grid-area: input;
-			/*background: #8B008B;*/
-		}
-
-		.mainButon{
-			grid-area: buton;
-			/*background:#7FFF00;*/
-			text-align: center;
-		}
-
-		.mainDiv{
-			grid-area:div;
-			/*background: #D8BFD8;*/
-		}
-
-		.mainFooter{
-		   grid-area:footer;
-		   background:orange;
-		}
-
-		.caixa{
-			 width:260px;
-		     height:40px;
-		     padding: 10px;
-		     margin: 10px;
-		}
-
-		.caixaMensagem{
-			width:600px;
-		    height:300px;
-		    resize: none;
-		}
-
-		.botao{
-			font-size: 20px;
-            text-decoration: none;
-            padding: 10px 30px;
-            border-radius: 25px;
-            margin: 20px;
-		}
-
-		 .destaque{
-             background-color: rgb(90, 219, 176);
-             color:white;
-             box-shadow: 2px 2px 1px 1px #000;
-         }
-
-         .botao:hover{
-            background-color: blue;
-            color: blueviolet;
-         }
-
-         .destaque:active{
-             box-shadow: none;
-         }
-
-         h4,p{
-         	margin: 10px;
-         }
-
-</style>
+    
 </head>
 <body>
     <div id="container">
 
-	<header class="mainHeader"><img src="img/banner-contato.png" width="100%"></header>
+    	<header class="cabecalho">
+    		<img src="img/banner-contato.png" width="100%">
+        <div class="navbar" id="nav">
+            <ul>
+                <li class="li">Home</li>
+                <li class="li">Projetos</li>
+                <li class="li">Downloads</li>
+                <li class="li">Sobre</li>
+                <li class="li">Fale Conosco</li>
+            </ul>
+        </div>
+    </header>
+
 
 	<nav class="mainH1"><h1>CONTATO</h1></nav> 
 
@@ -143,7 +51,7 @@
 	</aside>
 
 	<div class="mainDiv">
-		<h4>CONTATE-NOS TAMBÉM PELOS CANAIS</h4>
+		<h4 class="canais">CONTATE-NOS TAMBÉM PELOS CANAIS</h4>
 		<ul>
 			<p> <strong>Telefone:</strong> +55 63 99999-9999</p>
 			<p> <strong>E-mail:</strong> <a href="">email@email.com</a></p>
@@ -152,7 +60,28 @@
 	</div>
 
 
-	<footer class="mainFooter">Footer </footer>
+	<footer class="rodape">
+        <div class="div-social">
+            <img src="./img/facebook.png" alt="facebook" class="img-social">
+            <img src="./img/twiter.png" alt="twiter" class="img-social">
+            <img src="./img/instagran.png" alt="instagran" class="img-social">
+            <img src="./img/youtube.png" alt="youtube" class="img-social">
+        </div>
+
+        <div class="div-links">
+            <a href="#">Cursos</a>
+            <a href="#">Contato</a>
+        </div>
+
+        <div>
+            <p>Rua tal , setor tal e tal CEP 777777777</p>
+        </div>
+
+        <div>
+            <p>Copyright 2018 © SENAI ● Todos os direitos reservados</p>
+        </div>
+
+    </footer>
 
 
 	</div>

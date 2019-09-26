@@ -1,0 +1,84 @@
+		*{
+    		margin: 0;
+    		padding: 0;
+    		box-sizing: border-box;
+    	}
+		 #container{
+		   display: grid;
+		   grid-template-rows:         70vh        70vh        60vh              50vh              60vh           20vh;
+		    grid-template-areas:"header header" "nav nav" "content aside"  "article article" "equipe equipe" "footer footer";
+		}
+
+		.cabecalho{
+		   grid-area:header;
+		   /*background:red;*/
+		}
+
+		.mainNav{
+		   grid-area:nav;
+		   /*background:green;*/
+		}
+		.mainArticle{
+		   grid-area:content;
+		   /*background:blue;*/
+		}
+		.mainAside{
+		   grid-area:aside;
+		   /*background:yellow;*/
+		}
+
+		.article{
+			grid-area: article;
+			/*background-color: gray;*/
+		}
+
+		.equipe{
+			grid-area: equipe;
+			background-color: purple;
+		}
+
+		.rodape{
+		   grid-area:footer;
+		   background:orange;
+		}
+
+		.pesquisa{
+			font-size: 75px;
+			text-align: center;
+		}
+
+		.texto{
+			font-size: 30px;
+			text-align: center;
+		}
+
+		h2{
+			text-align: center;
+		}
+
+		.div1{
+			background-color: #00FF00;
+			width: 80px;
+			display: inline-block;
+			text-align: center;
+		}
+
+		.div2{
+			background-color: #D2691E;
+			width: 80px;
+			display: inline-block;
+			text-align: center;
+		}
+
+		.div3{
+			background-color: #DEB887;
+			width: 80px;
+			display: inline-block;
+			text-align: center;
+		}
+
+		.lab-foto{
+			text-align: center;
+			padding: 30px;
+			font-size: 30px;
+		}

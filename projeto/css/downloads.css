@@ -1,0 +1,85 @@
+html,body{
+    		margin: 0;
+    		padding: 0;
+    		box-sizing: border-box;
+			/*overflow-y:hidden;*/
+			/*overflow-x:hidden;*/
+    	}
+    	
+    	#container{	
+    		display: grid;
+    		grid-template-rows:      90vh             50vh            50vh             30vh;
+    		grid-template-areas: "header header"  "content aside" "conteudo foto" "footer footer"
+
+    	}
+
+
+    	.cabecalho{
+    		grid-area: header; 
+    		box-sizing: border-box;
+    	}
+
+    	/*.mainNav{*/
+    		/*grid-area: nav; */
+    		/*box-sizing: border-box;*/
+    	/*}*/
+    	
+    	.mainArticle{
+    		grid-area: content; 
+    		box-sizing: border-box;
+    	}
+    	
+    	.mainAside{
+    		grid-area: aside; 
+    		/*background-color: yellow;*/
+    		box-sizing: 
+    	}
+
+    	.mainArti{
+    		grid-area: conteudo; 
+    		/*background-color: purple;*/
+    	}
+    	
+    	.mainAsi{
+    		grid-area: foto; 
+    		box-sizing: border-box;
+    	}
+    	
+    	.rodape{
+    		grid-area: footer; 
+    		box-sizing: border-box;s
+    	}
+
+    	.lab{
+    		float: right;
+    		padding: 10px;
+    	}
+    	.downloads{
+    		margin: 0;
+    	}
+
+	  	a{
+	  		text-decoration: none;
+	  	}
+
+	  	ul{
+	  		 list-style-type: none;
+	  	}
+
+	  	h3{
+            /*background: -webkit-linear-gradient(left,#ff1053 0%, #ff4f0f 100%)*/
+            /*background: -webkit-linear-gradient(right,#ff1053 0%, #ff4f0f 100%)*/
+            /*-webkit-background-clip:text;*/
+
+             -webkit-background-clip: text !important;
+            -webkit-text-fill-color: transparent;
+            /*background: -webkit-linear-gradient(left, rgb(255, 104, 192) 0%, rgb(104, 84, 249) 100%);*/
+            /*background-image: -webkit-linear-gradient(left, rgb(255, 104, 192) 0%, rgb(104, 84, 249) 100%);*/
+            /*-webkit-text-fill-color:transparent;*/
+            background: -webkit-linear-gradient(left, #f8a335 0%, #f2175f 100%);
+            background-image: -webkit-linear-gradient(left, rgb(248, 163, 53) 0%, rgb(242, 23, 95) 100%);
+	  		padding: 8px;
+            margin: 10px;
+            font-size: 30px;
+            
+	  	}
