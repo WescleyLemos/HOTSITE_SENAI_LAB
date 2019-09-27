@@ -1,0 +1,8 @@
+h1 {
+    background: -webkit-linear-gradient(left, rgb(255, 104, 192) 0%, rgb(104, 84, 249) 100%);
+    background-image: -webkit-linear-gradient(left, rgb(255, 104, 192) 0%, rgb(104, 84, 249) 100%);
+}
+
+.card-projetos {
+    background: -webkit-linear-gradient(left, rgb(255, 104, 192) 0%, rgb(104, 84, 249) 100%);
+}

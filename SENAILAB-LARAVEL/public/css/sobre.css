@@ -1,0 +1,134 @@
+		*{
+    		margin: 0;
+    		padding: 0;
+    		box-sizing: border-box;
+    	}
+		 #container{
+		   display: grid;
+		   grid-template-rows:         60vh                 50vh           70vh                        140vh                    30vh                 50vh                  20vh;
+		    grid-template-areas:"header header header" "nav nav nav" "content aside aside"  "article article article" "equipe equipe equipe"  "foto1 foto2 foto3" "footer footer footer";
+		}
+
+		.cabecalho{
+		   grid-area:header;
+		   /*background:red;*/
+		}
+
+		.mainNav{
+		   grid-area:nav;
+		   /*background:green;*/
+		   /*justify-content: center;*/
+		   text-align: center;
+		}
+		.mainArticle{
+		   grid-area:content;
+		   /*padding: 10px 0px;*/
+		   /*background:blue;*/
+		}
+		.mainAside{
+		   grid-area:aside;
+		   /*background:yellow;*/
+		}
+
+		.article{
+			grid-area: article;
+			padding: 40px 0px;
+			/*background-color: gray;*/
+		}
+
+		.equipe{
+			grid-area: equipe;
+			font-size: 50px;
+			 background: -webkit-linear-gradient(left, rgb(255, 104, 192) 0%, rgb(104, 84, 249) 100%);
+		    background-image: -webkit-linear-gradient(left, rgb(255, 104, 192) 0%, rgb(104, 84, 249) 100%);
+		    -webkit-background-clip: text !important;
+		    -webkit-text-fill-color: transparent;
+
+		    padding: 90px 0px;
+		}
+
+
+		.div1{
+			grid-area: foto1;
+			text-align: center;
+		}
+
+		.div2{
+			grid-area: foto2;
+			background-color: gray;
+			/*width: 350px;*/
+			height: 200px;
+			text-align: center;
+			margin: 10px;
+			
+		}
+
+		.div3{
+			grid-area: foto3;
+			/*padding: 10px;*/
+			text-align: center;
+			margin: 0px 40px 0px;
+		}
+
+		.rodape{
+		   grid-area:footer;
+		   /*background:orange;*/
+		   /*height: 100%;*/
+		}
+
+		.pesquisa{
+			font-size: 75px;
+			text-align: center;
+		}
+
+		.texto{
+			font-size: 30px;
+			text-align: center;
+			margin: 10px;
+		}
+
+		h2{
+			text-align: center;
+		}
+
+
+		.senai-lab{
+			/*padding: 90px;*/
+			font-size: 30px; 
+			margin: 90px;
+			
+
+		}
+
+		.maquina-foto{
+			border: #ffcc66 Solid 5px;
+		}
+
+		.usuario{
+			text-align: center;
+		}
+
+		/*@media only screen and (max-device-width: 900px) {*/
+		 /*.container{ width:600px; } */
+		/*}*/
+
+		/*@media only screen and (max-device-width: 700px) {*/
+		/*.container { width:400px; } */
+		/*}*/
+
+
+        @media(max-width: 600px){
+           .cabecalho{display: inline-block;}
+           	
+           }
+
+           /*.navbar{display: inline-block;}*/
+        }
+
+        /*@media(max-width: 1000px),(orientation: portrait){*/
+            /*.container{display: block;}*/
+        /*}*/
+
+        /*@media(min-width: 700px) and (max-width: 1000px) {*/
+            /*.container{display: block;}*/
+        /*}*/
