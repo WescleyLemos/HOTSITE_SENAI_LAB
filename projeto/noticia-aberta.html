@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Notícias</title>
-    
-    
-    <link rel="stylesheet" href="css/menu-rodape.css" >
-    
+
+
+    <link rel="stylesheet" href="css/menu-rodape.css">
+    <link rel="stylesheet" href="css/noticia-aberta.css">
+
 </head>
 
 
 
 
 <body>
-     <!-- ------------------------------MENU------------------------------ -->
-     <header class="cabecalho">
+    <div id="fb-root"> </div>
+    <script assíncrono adia crossorigin="anônimo" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v4.0">
+    </script>
+    <!-- ------------------------------MENU------------------------------ -->
+    <header class="cabecalho">
+        <img src="./img/banner-noticias.png" alt="">
         <div class="navbar" id="nav">
             <ul>
                 <li class="li">Home</li>
@@ -29,8 +35,60 @@
     </header>
     <!-- ---------------------------------------------------------------- -->
 
-    <div class="so-pra-testar"></div>
 
+    <!-- ------------------------------MAIN-------------------------- -->
+    <main class="conteudo-principal">
+
+        <div class="link-noticia-atual">
+            <a href="#">Notícias </a>
+            <p class="separador">&nbsp;/</p>
+            <p> &nbsp; TÍTULO DESSA NOTÍCIA </p>
+        </div>
+
+
+
+        <div class="noticia-box">
+            <img src="./img/img.png" alt="imagem-noticas-card-pequeno" class="img-card">
+            <div class="data">
+                <p class="dia">12</p>
+                <p class="mes">DEZ</p>
+                <p class="ano">2019</p>
+            </div>
+
+            <div class="card-texto">
+                <div class="linha"></div>
+                <p class="tag-card">#TAG</p>
+                <p class="texto-noticia">Sed
+                    ut perspiciatis unde omnis iste natus error sit
+                    doloremque laudantium Sed ut perspiciatis unde omnis iste
+                    natus error sit doloremque laudantium Sed ut perspiciatis
+                    unde omnis iste natus error sit doloremque laudantium Sed
+                    ut perspiciatis unde omnis iste natus error sit doloremque
+                    laudantium Sed ut perspiciatis unde omnis iste natus error sit
+                    doloremque laudantium Sed ut perspiciatis unde omnis iste
+                    natus error sit doloremque laudantium Sed ut perspiciatis
+                    unde omnis iste natus error sit doloremque laudantium Sed
+                    ut perspiciatis unde omnis iste natus error sit doloremque
+                    laudantium Sed ut perspiciatis unde omnis iste natus error sit
+                    doloremque laudantium Sed ut perspiciatis unde omnis iste
+                    natus error sit doloremque laudantium Sed ut perspiciatis
+                    unde omnis iste natus error sit doloremque laudantium Sed ut
+                    perspiciatis unde omnis iste natus error sit doloremque laudantium Sed
+                    ut perspiciatis unde omnis iste natus error sit doloremque laudantium
+                    Sed ut perspiciatis unde omnis iste natus error sit doloremque
+                    laudantium Sed ut perspiciatis unde omnis iste natus error sit
+                    doloremque laudantium</p>
+            </div>
+        </div>
+    </main>
+    <!-- ------------------------------final MAIN-------------------------- -->
+
+    <!-- ------------------------------PLUGIN COMENTARIOS-------------------------- -->
+    <div class="fb-comments"
+        data-href="arquivo: /// C: /Users/Wescley/Desktop/%23%20-%20HOTSITE-SENAI-LAB/projeto/noticia-aberta.html" data-
+        width="100px" data-numposts="20">
+    </div>
+    <!-- ------------------------------ final PLUGIN COMENTARIOS-------------------------- -->
 
 
 
@@ -62,5 +120,7 @@
     <!-- ---------------------------------------------------------------- -->
 </body>
 <script src="js/menu.js"></script>
+
+
 
 </html>
