@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link href="https://fonts.googleapis.com/css?family=Lexend+Mega&display=swap" rel="stylesheet">
     <title>Senai Lab</title>
-    <link rel="stylesheet" href="{{asset('css/menu-rodape.css')}}" type="text/css">
+    
     <link rel="stylesheet" href="{{asset('css/home.css')}}" type="text/css">
     <link rel="stylesheet" href="{{asset('css/onScroll.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('css/menu-rodape.css')}}" type="text/css">
 
 
 </head>
@@ -22,16 +23,17 @@
         <img src="./img/logo-home.png" alt="logo-home" class="logo-home">
         <div class="navbar" id="nav">
             <ul>
-                <li> <a id="home" class="a">Home</a> </li>
-                <li> <a id="projetos" class="a">Projetos</a> </li>
-                <li> <a id="downloads" class="a">Downloads</a> </li>
-                <li> <a id="sobre" class="a">Sobre</a> </li>
-                <li> <a id="contato" class="a">Fale Conosco</a> </li>
+                <li class="li"> <a id="home" class="li">Home</a> </li>
+                <li class="li"> <a id="projetos" class="li" href="javaScript: void(0);" onclick="setavai('baixo')">Projetos</a> </li>
+                <li class="li"> <a id="noticias" class="li" href="javaScript: void(0);" onclick="vai('news')">Notícias</a> </li>
+                <li class="li"> <a id="downloads" class="li">Downloads</a> </li>
+                <li class="li"> <a id="sobre" class="li">Sobre</a> </li>
+                <li class="li"> <a id="contato" class="li">Fale Conosco</a> </li>
             </ul>
         </div>
 
         <div class="scroll-down">
-            <a href="javaScript: void(0);" onclick="vai('baixo')">v</a>
+            <a href="javaScript: void(0);" onclick="setavai('baixo')">v</a>
         </div>
 
     </header>
@@ -45,17 +47,18 @@
         <h3 class="subtitulo-projetos">Veja abaixo os principais projetos desenvolvidos pelo Senai Lab</h3>
 
         <div class="selecionar-projetos">
-            <div class="box-projetos " data-anime="esquerda">
+
+            <div class="box-projetos " data-anime="esquerda" >
                 <h2>MÁQUINA DE CORTE<br> A LASER</h2>
-                <img src="./img/maquina-laser.jpg" alt="maquina-a-laser" class="box-laser">
+                <a href="corte-a-laser" class="link link-laser"></a>
             </div>
 
-            <div class="box-projetos" data-anime="direita">
+            <div class="box-projetos" data-anime="direita" >
                 <h2>IMPRESSORA 3D</h2>
-                <img src="./img/Impressora3D.JPG" alt="impressora-3d" class="box-impressora">
+                <a href="impressora3d" class="link link-impressora"></a>
             </div>
         </div>
-        <div class="noticias-div">
+        <div class="noticias-div" id="news">
             <img src="./img/noticias-titulo.png" alt="banner-titulo-noticias" class="banner-noticias">
             <h1 class=" noticias-titulo">NOTÍCIAS</h1>
         </div>
@@ -64,7 +67,7 @@
 
     <!-- ------------------------------NOTÍCIAS-------------------------- -->
 
-    <div class="noticias">
+    <div class="noticias" >
 
         <div class="botoes-div">
             <button class="botoes bt-impressora">Impressora 3d</button>

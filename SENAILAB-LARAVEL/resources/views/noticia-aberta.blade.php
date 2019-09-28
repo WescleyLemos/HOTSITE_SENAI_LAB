@@ -24,13 +24,14 @@
     <header class="cabecalho">
         <img src="./img/banner-noticias.png" alt="">
         <div class="navbar" id="nav">
-            <ul>
-                <li> <a id="home" class="a">Home</a> </li>
-                <li> <a id="projetos" class="a">Projetos</a> </li>
-                <li> <a id="downloads" class="a">Downloads</a> </li>
-                <li> <a id="sobre" class="a">Sobre</a> </li>
-                <li> <a id="contato" class="a">Fale Conosco</a> </li>
-            </ul>
+        <ul>
+                <li class="li"> <a id="home" class="li">Home</a> </li>
+                <li class="li"> <a id="projetos" class="li" >Projetos</a> </li>
+                <li class="li"> <a id="noticias" class="li" >Notícias</a> </li>
+                <li class="li"> <a id="downloads" class="li">Downloads</a> </li>
+                <li class="li"> <a id="sobre" class="li">Sobre</a> </li>
+                <li class="li"> <a id="contato" class="li">Fale Conosco</a> </li>
+        </ul>
         </div>
     </header>
     <!-- ---------------------------------------------------------------- -->

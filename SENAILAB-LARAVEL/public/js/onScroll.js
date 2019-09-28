@@ -1,22 +1,21 @@
+const target = document.querySelectorAll('[data-anime]');
+const animationClass = 'animate';
 
-        const target = document.querySelectorAll('[data-anime]');
-        const animationClass = 'animate';
-
-        // https://www.youtube.com/watch?v=pKTOT63X9XQ
-        function animeScroll() {
-            const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
-            target.forEach(function (element) {
-                if ((windowTop) > element.offsetTop) {
-                    element.classList.add(animationClass);
-                }
-
-            })
+// https://www.youtube.com/watch?v=pKTOT63X9XQ
+function animeScroll() {
+    const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
+    target.forEach(function(element) {
+        if ((windowTop) > element.offsetTop) {
+            element.classList.add(animationClass);
         }
 
+    })
+}
+
+animeScroll();
+
+if (target.length) {
+    window.addEventListener('scroll', function() {
         animeScroll();
-
-        if (target.length) {
-            window.addEventListener('scroll', function () {
-                animeScroll();
-            })
-        }
+    })
+}
