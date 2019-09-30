@@ -40,9 +40,9 @@ if (tituloPagina == 'Senai Lab') {
 }
 
 
-
-if (url_atual.indexOf("projetos#baixo" != -1)) {
+//  FAZ MENU APARECER QUANDO O MENU PROJETOS É ACIONADO
+if (url_atual.indexOf("projetos#baixo") != -1) {
+    alert(url_atual);
     nav.classList.add('nav-branca');
     selecionar.forEach(e => e.classList.remove('li'));
-
 }

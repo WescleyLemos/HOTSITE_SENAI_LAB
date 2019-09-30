@@ -41,7 +41,7 @@
     <main class="conteudo-principal">
 
         <div class="link-noticia-atual">
-            <a href="#">Notícias </a>
+            <a href="noticias">Notícias </a>
             <p class="separador">&nbsp;/</p>
             <p> &nbsp; TÍTULO DESSA NOTÍCIA </p>
         </div>

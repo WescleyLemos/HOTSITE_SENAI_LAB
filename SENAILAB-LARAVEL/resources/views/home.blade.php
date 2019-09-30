@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link href="https://fonts.googleapis.com/css?family=Lexend+Mega&display=swap" rel="stylesheet">
     <title>Senai Lab</title>
-    
+
     <link rel="stylesheet" href="{{asset('css/home.css')}}" type="text/css">
     <link rel="stylesheet" href="{{asset('css/onScroll.css')}}" type="text/css">
     <link rel="stylesheet" href="{{asset('css/menu-rodape.css')}}" type="text/css">
@@ -73,47 +73,57 @@
             <button class="botoes bt-impressora">Impressora 3d</button>
             <button class="botoes bt-laser">corte a lazer</button>
         </div>
-        <div class="noticia-principal" data-anime="esquerda">
 
+        <a href="ver-noticia" class="noticia-link">
+        <div class="noticia-principal" data-anime="esquerda">
             <p class="tag">#TAG</p>
             <p class="titulo-principal">Texto da notícia principal e tals </p>
         </div>
+        </a>
 
 
-        <div class="noticia-box noticia2" data-anime="direita">
+        <div class="noticia-box noticia2" data-anime="direita" >
+            <a href="ver-noticia" class="noticia-card-link">
             <img src="./img/img.png" alt="imagem-noticas-card-pequeno" class="img-card">
             <div class="card-texto">
                 <div class="linha"></div>
                 <p class="tag-card">#TAG</p>
                 <p class="titulo-card">Texto da notícia principal e tals </p>
             </div>
+            </a>
         </div>
 
         <div class="noticia-box noticia3" data-anime="esquerda">
+        <a href="ver-noticia" class="noticia-card-link">
             <img src="./img/img.png" alt="imagem-noticas-card-pequeno" class="img-card">
             <div class="card-texto">
                 <div class="linha"></div>
                 <p class="tag-card">#TAG</p>
                 <p class="titulo-card">Texto da notícia principal e tals </p>
             </div>
+</a>
         </div>
 
         <div class="noticia-box noticia4" data-anime="esquerda">
+        <a href="ver-noticia" class="noticia-card-link">
             <img src="./img/img.png" alt="imagem-noticas-card-pequeno" class="img-card">
             <div class="card-texto">
                 <div class="linha"></div>
                 <p class="tag-card">#TAG</p>
                 <p class="titulo-card">Texto da notícia principal e tals </p>
             </div>
+</a>
         </div>
 
         <div class="noticia-box noticia5" data-anime="direita">
+        <a href="ver-noticia" class="noticia-card-link">
             <img src="./img/img.png" alt="imagem-noticas-card-pequeno" class="img-card">
             <div class="card-texto">
                 <div class="linha"></div>
                 <p class="tag-card">#TAG</p>
                 <p class="titulo-card">Texto da notícia principal e tals </p>
             </div>
+</a>
         </div>
 
         <div class="link"><a href="noticias">
